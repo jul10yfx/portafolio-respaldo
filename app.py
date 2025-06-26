@@ -137,7 +137,7 @@ if st.session_state.ver_proyectos:
         for i in range(4):
             idx = row + i + 1
             if idx <= 24:
-                img_path = f"foto_exodo_{idx}.jpg"
+                img_path = f"foto_exodo_{idx}.JPG"
                 if os.path.exists(img_path):
                     with cols[i]:
                         st.image(img_path, use_container_width=True, caption=f"Foto {idx}")
@@ -155,7 +155,7 @@ if st.session_state.ver_proyectos:
         for i in range(3):
             idx = row + i + 1
             if idx <= 12:
-                img_path = f"foto_proyecto_{idx}.jpg"
+                img_path = f"foto_proyecto_{idx}.JPG"
                 if os.path.exists(img_path):
                     with cols[i]:
                         st.image(img_path, use_container_width=True, caption=f"Proyecto {idx}")
